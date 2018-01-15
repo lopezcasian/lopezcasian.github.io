@@ -39,6 +39,7 @@ body, html{
 
 #portafolio {
 	background-color: #cec9c9;
+	text-align: center;
 }
 
 #menu {
@@ -48,9 +49,14 @@ body, html{
 }
 
 .imgPortafolio {
-	text-align: center;
-	margin: 20px;
 	box-shadow: 0 0 10px #565555;
+	max-height: 300px;
+	max-width: 400px;
+	margin: 30px;
+}
+
+.portafolio h2 {
+	text-align: left;
 }
 
 #contacto {
@@ -69,3 +75,4 @@ body, html{
 .redes b {
 	color: black;
 }
+
