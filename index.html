@@ -8,20 +8,19 @@
 
     <title>Esteban López</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/starter-template.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/starter-template.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
   </head>
 
   <body>
-
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <a id="name" class="navbar-brand" href="#"><b>Esteban López</b></a>
-
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="collapse navbar-collapse" id="menu">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav mr-auto"></ul>
+        <ul  class="navbar-nav">
           <li class="nav-item active">
             <a class="nav-link" href="#sobremi">Sobre mí</a>
           </li>
@@ -34,62 +33,164 @@
         </ul>
       </div>
     </nav>
-
-    <main role="main" class="main">
-      <div class="starter-template pt-5">
-        <img src="images/profile.jpg" id="profile" class="rounded-circle border border-white img-fluid">
-        <h1 id="nombrePrincipal" class="display-4"><strong>José Esteban López Casián</strong></h1>
-        <p class="lead h1"><b>Pasante de la carrera de Ing. Electrónica y Computación con orientación en telecomunicaciones, <br />apasionado por el desarrollo web, los tacos y el sushi :3</b></p>
-      </div>
-    </main><!-- /.container -->
-
-    <section id="sobremi">
-      <div class="container sobremi">
-        <h2><b>Sobre mí</b></h2><br /><br /><br />
-        <p>Hola, mi nombre es Esteban López, soy pasante de la Ing. Electrónica y Computación de la Universidad de Guadalajara, mis pasatiempos favoritos son tocar la guitarra, ver películas, salir con amigos y por supuesto programar.
-        <br /><br />
-        Desde la preparatoria estoy en contacto con actividades relacionadas a mi carrera, donde realicé mi servicio social dando mantenimiento preventivo y correctivo a computadoras. En la universidad fui becario de soporte técnico, desarrollé algunos proyectos de programación en C, C++, Python y Java, y participé en algunos concursos. Mi interés por el desarrollo web inicio cuando realicé mi servicio social, en el cual aprendí tecnologías como HTML, CSS, JS, jQuery, Bootstrap y PHP.
-        <br /><br />
-        Actualmente soy autodidacta aprendiendo herramientas de trabajo como git y trello, y formas de mejorar mi codigo.</p>
-      </div>
-    </section> <!-- Sobre mi -->
-
-    <section id="portafolio">
-      <div class="container portafolio">
-        <h2><b>Portafolio</b></h2>
-        <br /><br /><br />
-        <a href="pages/brazo.html" target="blank"><img src="images/Projects/brazo1.JPG" class="imgPortafolio"></a>
-        <a href="pages/bar.html" target="blank"><img src="images/Projects/BAR6.JPG" class="imgPortafolio"></a>
-        <a href="pages/tca.html" target="blank"><img src="images/Projects/TCA1.JPG" class="imgPortafolio"></a>
-        <a href="pages/gato.html" target="blank"><img src="images/Projects/IA4.JPG" class="imgPortafolio"></a>
-        <a href="pages/lds.html" target="blank"><img src="images/Projects/LDS.JPG" class="imgPortafolio"></a>
-      </div>
-    </section>
-
-    <section id="contacto">
-      <div class="container cv">
-        <h2><b>Contacto</b></h2>
-        <br /><br /><br />
-        <div class="row rowContacto">
-          <div class="col">
-            <a href="https://drive.google.com/open?id=1oWNqxkdIHij35m70nmXKSUbn70EQb5oa" target="_blank"><img src="images/cv.png" id="cv" width="150" height="150" alt="CV"><br />  
-            <label id="lblcv" for="cv"><b> CV </b></label></a>
+    <div role="main" class="container-fluid pt-5 fullImage text-center">
+      <div class="starter-template">
+        <div class="row">
+          <div class="col-sm-4 text-md-right">
+            <img src="images/profile.jpg" id="profile" class="rounded-circle border border-white img-fluid w-50">
           </div>
-          <div class="col redes">
-              <div class="row">
-                <a href="mailto:estebanlopez.cn@gmail.com"><img src="images/mail.png" width="50" height="50"><b>estebanlopez.cn@gmail.com</b></a>
-              </div>
-              <div class="row">
-                <a><img src="images/whatsapp.png" width="50" height="50">
-                <b>375-118-54-59</b></a>
-              </div>
-              <div class="row">
-                <a href="https://www.linkedin.com/in/jos%C3%A9-esteban-l%C3%B3pez-casi%C3%A1n-299401143/" target="_blank"><img src="images/linkedin.png" width="50" height="50"><b>José Esteban López Casián</b></a>
-              </div>
+          <div class="col-sm-8">
+            <p id="nombrePrincipal" class="h2 text-md-left"><strong>José Esteban López Casián</strong></p>
+            <p class="text-md-left">Pasante de la carrera de Ing. Electrónica y Computación con orientación en telecomunicaciones, <br />apasionado por el desarrollo web, los tacos y el sushi :3</p>
           </div>
         </div>
       </div>
-    </section>
-    <script type="text/javascript" src="js/jquery.js"></script>
+    </div><!-- /.container -->
+ 
+    <div id="sobremi" class="w-100">
+      <div class="container pt-5 pb-5">
+          <p class="h2"><b>Sobre mí</b></p><br /><br /><br />
+          <p>Hola, mi nombre es Esteban López, soy pasante de la Ing. Electrónica y Computación de la Universidad de Guadalajara, mis pasatiempos favoritos son tocar la guitarra, ver películas, salir con amigos y por supuesto programar.
+          <br /><br />
+          Desde la preparatoria estoy en contacto con actividades relacionadas a mi carrera, donde realicé mi servicio social dando mantenimiento preventivo y correctivo a computadoras. En la universidad fui becario de soporte técnico, desarrollé algunos proyectos de programación en C, C++, Python y Java, y participé en algunos concursos. Mi interés por el desarrollo web inicio cuando realicé mi servicio social, en el cual aprendí tecnologías como HTML, CSS, JS, jQuery, Bootstrap y PHP.
+          <br /><br />
+          Actualmente soy autodidacta aprendiendo herramientas de trabajo como git y trello, y formas de mejorar mi codigo.</p>
+      </div> <!-- Sobre mi -->
+    </div>
+    <div id="portafolio">
+        <div class="container pt-5 pb-5">
+          <p class="h2"><b>Portafolio</b></p>
+          <br /><br /><br />
+          <div class="card mb-2">
+            <div class="card-body">
+              <div class="video-image-thumb col-md-3 float-left">
+                <div class="video-image-mask">
+                    <img src="images/Projects/brazo1.JPG" class="w-100 h-100">
+                </div>
+              </div>
+              <div class="data">
+                  <h4 class="video-title">Control de brazo robótico</h4>
+                  <p><a href="pages/brazo.html">Ver más...</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-2">
+            <div class="card-body">
+              <div class="video-image-thumb col-md-3 float-left">
+                <div class="video-image-mask">
+                    <img src="images/Projects/BAR6.JPG" class="w-100 h-100">
+                </div>
+              </div>
+              <div class="data">
+                  <h4 class="video-title">Inventarios</h4>
+                  <p><a href="pages/bar.html">Ver más...</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-2">
+            <div class="card-body">
+              <div class="video-image-thumb col-md-3 float-left">
+                <div class="video-image-mask">
+                    <img src="images/Projects/TCA1.JPG" class="w-100 h-100">
+                </div>
+              </div>
+              <div class="data">
+                  <h4 class="video-title">Proyecto IoT</h4>
+                  <p><a href="pages/tca.html">Ver más...</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-2">
+            <div class="card-body">
+              <div class="video-image-thumb col-md-3 float-left">
+                <div class="video-image-mask">
+                    <img src="images/Projects/IA4.JPG" class="w-100 h-100">
+                </div>
+              </div>
+              <div class="data">
+                  <h4 class="video-title">Juego del gato con IA</h4>
+                  <p><a href="pages/gato.html">Ver más...</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card mb-2">
+            <div class="card-body">
+              <div class="video-image-thumb col-md-3 float-left">
+                <div class="video-image-mask">
+                    <img src="images/Projects/LDS.JPG" class="w-100 h-100">
+                </div>
+              </div>
+              <div class="data">
+                  <h4 class="video-title">Laboratorio de Desarrollo de Software</h4>
+                  <p><a href="pages/lds.html">Ver más...</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="contacto">
+        <div class="container pt-5 pb-5">
+          <p class="h2"><b>Contacto</b></p> <br /><br />
+          <div class="row cvCenter">
+            <div class="col">
+              <a href="https://drive.google.com/open?id=1oWNqxkdIHij35m70nmXKSUbn70EQb5oa" target="_blank"><img src="images/cv.png" id="cv" width="150" height="150" alt="CV"><br />  
+              <label id="lblcv" for="cv"><b> CV </b></label></a>
+            </div>
+            <div class="col">
+              <div class="row pb-2">
+                <a href="mailto:estebanlopez.cn@gmail.com">
+                  <img class="mr-2" src="images/mail.png" width="50" height="50">
+                  <b>estebanlopez.cn@gmail.com</b>
+                </a>
+              </div>
+              <div class="row pb-2">
+                <a>
+                  <img class="mr-2" src="images/whatsapp.png" width="50" height="50">
+                  <b>375-118-54-59</b>
+                </a>
+              </div>
+              <div class="row">
+                <a href="https://www.linkedin.com/in/jos%C3%A9-esteban-l%C3%B3pez-casi%C3%A1n-299401143/" target="_blank">
+                  <img class="mr-2" src="images/linkedin.png" width="50" height="50">
+                  <b>José Esteban López Casián</b>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--
+      <section id="contacto">
+        <div class="container cv">
+          <h2><b>Contacto</b></h2>
+          <br /><br /><br />
+          <div class="row rowContacto">
+            <div class="col">
+                <a href="https://drive.google.com/open?id=1oWNqxkdIHij35m70nmXKSUbn70EQb5oa" target="_blank"><img src="images/cv.png" id="cv" width="150" height="150" alt="CV"><br />  
+                <label id="lblcv" for="cv"><b> CV </b></label></a>
+            </div>
+            <div class="col redes">
+                <div class="row">
+                  <a href="mailto:estebanlopez.cn@gmail.com"><img src="images/mail.png" width="50" height="50"><b>estebanlopez.cn@gmail.com</b></a>
+                </div>
+                <div class="row">
+                  <a><img src="images/whatsapp.png" width="50" height="50">
+                  <b>375-118-54-59</b></a>
+                </div>
+                <div class="row">
+                  <a href="https://www.linkedin.com/in/jos%C3%A9-esteban-l%C3%B3pez-casi%C3%A1n-299401143/" target="_blank"><img src="images/linkedin.png" width="50" height="50"><b>José Esteban López Casián</b></a>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
   </body>
 </html>

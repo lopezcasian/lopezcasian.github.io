@@ -4,11 +4,10 @@ body, html{
 
 .starter-template {
   color: white;
-  text-align: center;
+  padding-top: 10% !important;
 }
 
-.main {
-	padding-top: 55px;
+.fullImage {
 	height: 100%;
 	background-image: url(../images/main.jpg);
 	background-position: center;
@@ -20,49 +19,27 @@ body, html{
   	text-shadow: 3px 2px 2px #565555;
 }
 
-#name {
-	margin-right: 30px;
-}
-
-#profile {
-	max-width: 12em;
-	max-height: 12em;
-}
-
-.container {
-	padding: 100px;
-}
-
 #sobremi {
-	background-color: #f4f4f4;
+	background-color: #f7f3ef;
 }
 
 #portafolio {
-	background-color: #cec9c9;
-	text-align: center;
-}
-
-#menu {
-	position: inherit;
-	right: 0;
-	padding-right: 20px;
-}
-
-.imgPortafolio {
-	box-shadow: 0 0 10px #565555;
-	max-height: 300px;
-	max-width: 400px;
-	margin: 30px;
-}
-
-.portafolio h2 {
-	text-align: left;
+	background-color: #ddd6d2;
 }
 
 #contacto {
-	background-color: #a3a1a1;
+	background-color: #aa9a96;
 }
 
+.cvCenter a, .cvCenter{
+	color: black;
+	text-align: center;
+}
+
+.card-body{
+	background-color: #f7f3ef;
+}
+/*
 .rowContacto{
 	text-align: center;
 }
