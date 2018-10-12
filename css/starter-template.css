@@ -2,6 +2,14 @@ body, html{
 	height: 100%;
 }
 
+.cvs{
+	font-family: 'K2D', sans-serif;
+}
+
+a:hover {
+	color: black;
+}
+
 .starter-template {
   color: white;
   padding-top: 10% !important;
